@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Les Employés</h2>
+    <div class="list-group">
+      <app-employe *ngFor="let employe of employes;"
+      [name]="employe.name"
+      [firstname]="employe.firstname"
+      [age]="employe.age"
+      [fonction]="employe.fonction"
+      [email]="employe.email"></app-employe>
+  </div>
+</div>
